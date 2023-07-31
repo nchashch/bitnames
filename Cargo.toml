@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ddk = { git = "https://github.com/LayerTwo-Labs/ddk" }
+ddk = { git = "https://github.com/LayerTwo-Labs/ddk", rev = "b10a24fa15b43800c381b74895be4b4a72606101" }
 
 anyhow = "1.0.72"
 project-root = "0.2.2"

@@ -8,6 +8,10 @@ type Node = ddk::node::Node<Authorization, BitName, BitNamesState>;
 type Wallet = ddk::wallet::Wallet<BitName>;
 type Miner = ddk::miner::Miner<Authorization, BitName>;
 
+// This doesn't do anything, it just shows how to get node, wallet, and miner instances.
+//
+// After we've got node, wallet, and miner instances we are completely free to use whatever tools
+// we want for API, CLI, TUI, or GUI.
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     const DEFAULT_NET_PORT: u16 = 4000;
